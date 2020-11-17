@@ -6,11 +6,10 @@
 
 class Table {
 public:
-    int left;
-    int right;
-    int MoveRightLeft();
-    int MoveUpDown();
-    Table();
+ 
+    Table() {
+
+    }
     void drawTable();
     void move(std::vector<char>&, std::vector<char>&);
     std::vector<char> cells{ 'A','*','*','*','*','*' };
@@ -24,21 +23,6 @@ int main()
     table.move(table.cells, table.Arrow);
 }
 
-int Table::MoveRightLeft()
-{
-    return 0;
-}
-
-int Table::MoveUpDown()
-{
-    return 0;
-}
-
-Table::Table()
-{
-    left = 0;
-    right = 0;
-}
 
 void Table::drawTable()
 {
